@@ -15,7 +15,7 @@ Durante o desenvolvimento, implementei algumas funcionalidades adicionais para e
 
 ## Pode ser acessado por meio do link
 
-[Clique aqui para acessar a página](https://lauragpse.github.io/nome-do-projeto/)
+[Clique aqui para acessar a página](https://lauragpse.github.io/CardsGatos/)
 
 <img src='https://github.com/Lauragpse/CardsGatos/blob/main/img/CardsGatos.print.png' width='750px' >
 
