@@ -17,7 +17,7 @@ Durante o desenvolvimento, implementei algumas funcionalidades adicionais para e
 
 [Clique aqui para acessar a página](https://lauragpse.github.io/nome-do-projeto/)
 
-<img src='' width='750px' >
+<img src='https://github.com/Lauragpse/CardsGatos/blob/main/img/CardsGatos.print.png' width='750px' >
 
 ## Linguagens de Programação e Tecnologias Utilizadas
 
