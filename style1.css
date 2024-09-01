@@ -1,0 +1,137 @@
+:root {
+    --branco: #f0f8ff;
+    --roxo: #380B61;
+    --lilas: #59429d;
+    --lavanda: #CCBBFF;
+    --branco1: #ffffff;
+    --preto: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-image: linear-gradient(var(--lavanda), var(--lilas));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: var(--branco);
+}
+
+h2 {
+    color: var(--roxo);
+}
+
+footer,
+footer a {
+    color: var(--branco);
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    perspective: 1000px;
+    /* Adiciona uma perspectiva para o efeito 3D */
+    width: 370px;
+    height: 320px;
+    margin: 30px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.card-front {
+    background-image: url(https://img.freepik.com/vetores-gratis/projeto-monocromatico-de-padrao-terrazzo_23-2148987750.jpg?t=st=1725175067~exp=1725178667~hmac=c16693e6cd99472acc84e6c9051cd94254d447831bac1fbe45c25c80fe9e1409&w=740);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    border: 5px solid var(--branco);
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    width: 250px;
+    height: 180px;
+    max-width: 250px;
+    border-radius: 30px;
+    border: 6px solid var(--branco);
+    margin-top: 15px;
+    /* Ajuste a margem superior conforme necessário */
+}
+
+.card-title {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--roxo);
+    font-weight: 900;
+}
+
+.card-back {
+    background: var(--roxo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card-back p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    color: var(--lilas);
+    font-size: 14px;
+    background-color: var(--branco1);
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
